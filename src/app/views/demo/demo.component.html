@@ -1,0 +1,52 @@
+<c-card class="my-4">
+    <c-card-body>
+        <c-row>
+            <c-col [xs]>
+                <label cLabel>Notes</label>
+<!--                <select id="note" aria-label="Note" cSelect>-->
+                <ul class="list-group">
+                    @for (note of notes; track note.id){
+                        <li class="list-group-item"> {{ note.description }}</li>
+                    }
+                </ul>
+<!--                </select>-->
+            </c-col>
+            <c-col [xs]>
+                <label cLabel>Modes</label>
+<!--                <select id="mode" aria-label="Mode" cSelect>-->
+                <ul class="list-group">
+                    @for (mode of modes; track mode.id){
+                        <li class="list-group-item"> {{ mode.description }}</li>
+                    }
+                </ul>
+<!--                </select>-->
+            </c-col>
+            <c-col [xs]>
+                <label cLabel>Attacks per beat</label>
+<!--                <select id="attacks" aria-label="Attacks" cSelect>-->
+                <ul class="list-group">
+                    @for (attack of attacks; track attack.id){
+                        <li class="list-group-item"> {{ attack.description }}</li>
+                    }
+                </ul>
+<!--                </select>-->
+            </c-col>
+        </c-row>
+        <c-row>
+            <c-col [xs]>
+                <button (click)="generate()" type="button" class="btn btn-primary mt-4">Generate</button>
+            </c-col>
+        </c-row>
+    </c-card-body>
+    @if (note !== null && mode !== null && attack !== null){
+    <c-card-footer>
+        <c-row class="text-center mb-2">
+            <c-col [xs]>
+                <button type="button" class="btn btn-secondary">
+                    {{ this.note }} {{ this.mode }} <span class="badge text-bg-secondary">{{ this.attack }} attacks</span>
+                </button>
+            </c-col>
+        </c-row>
+    </c-card-footer>
+    }
+</c-card>
