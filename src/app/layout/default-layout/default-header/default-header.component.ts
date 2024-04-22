@@ -54,7 +54,7 @@ export class DefaultHeaderComponent extends HeaderComponent {
 
   constructor() {
     super();
-    this.#colorModeService.localStorageItemName.set('coreui-free-angular-admin-template-theme-default');
+    this.#colorModeService.localStorageItemName.set('bass-utils-theme-default');
     this.#colorModeService.eventName.set('ColorSchemeChange');
 
     this.#activatedRoute.queryParams

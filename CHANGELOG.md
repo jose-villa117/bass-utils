@@ -1,4 +1,4 @@
-### [coreui-free-angular-admin-template](https://coreui.io/angular/) changelog
+### [bass-utils](https://coreui.io/angular/) changelog
 
 ---
 
