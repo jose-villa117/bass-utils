@@ -1,12 +1,4 @@
 import {
-  ActivatedRoute,
-  NavigationEnd,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-A6AI22FW.js";
-import {
   Platform,
   _getEventTarget,
   _getFocusedElementPierceShadowDom,
@@ -17,9 +9,6 @@ import {
   coerceNumberProperty,
   normalizePassiveListenerOptions
 } from "./chunk-6J5TMVUU.js";
-import {
-  IconDirective
-} from "./chunk-XSPMX75I.js";
 import {
   takeUntilDestroyed,
   toObservable
@@ -36,6 +25,17 @@ import {
   trigger,
   useAnimation
 } from "./chunk-DXAHZ6HJ.js";
+import {
+  IconDirective
+} from "./chunk-XSPMX75I.js";
+import {
+  ActivatedRoute,
+  NavigationEnd,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-A6AI22FW.js";
 import "./chunk-CWLXGUWV.js";
 import {
   AsyncPipe,
